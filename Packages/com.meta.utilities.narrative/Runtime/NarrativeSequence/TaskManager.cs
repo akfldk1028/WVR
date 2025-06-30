@@ -41,8 +41,8 @@ namespace Meta.Utilities.Narrative
             }
         }
 #endif
-
         private const string RESOURCE_PATH = "NarrativeSequence/Task Manager";
+        // Assets/@Resource/Task Sequences/NarrativeSequence/Task Manager.asset
 
         private static bool s_shownInstanceLoadError;
 

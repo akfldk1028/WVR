@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetDeviceTypes: 0100000002000000030000000400000005000000
   allowOptional3DofHeadTracking: 0
-  handTrackingSupport: 0
-  handTrackingFrequency: 0
-  handTrackingVersion: 0
+  handTrackingSupport: 1
+  handTrackingFrequency: 1
+  handTrackingVersion: 2
   anchorSupport: 0
   sharedAnchorSupport: 0
   renderModelSupport: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
   experimentalFeaturesEnabled: 0
   insightPassthroughEnabled: 0
   _insightPassthroughSupport: 0
-  _processorFavor: 0
-  systemSplashScreen: {fileID: 0}
+  _processorFavor: 1
+  systemSplashScreen: {fileID: 2800000, guid: de4a5342794eb074f81951ac646a9ca7, type: 3}
   systemSplashScreenType: 0
   _systemLoadingScreenBackground: 0
