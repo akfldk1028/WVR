@@ -106,14 +106,15 @@ namespace LaunchGame
 
             // 첫 실행 시 프로파일링 씬이 있으면 해당 씬 로드
             // 아니면 설정된 첫 번째 작업 시작
-            // if (s_firstLaunch && ProfilingSystem.SceneName != null)
-            // {
-            //     LoadScene(ProfilingSystem.SceneName);
-            // }
-            // else
-            // {
+            if (s_firstLaunch && ProfilingSystem.SceneName != null)
+            {
+                LoadScene(ProfilingSystem.SceneName);
+                Debug.Log($"LoadScene: {ProfilingSystem.SceneName}");
+            }
+            else
+            {
                 TaskManager.StartNarrativeFromTaskID(FirstTask);
-            // }
+            }
 
             s_firstLaunch = false;
         }

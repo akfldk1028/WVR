@@ -16,4 +16,5 @@ MonoBehaviour:
   Loop: 0
   Sequences:
   - {fileID: 11400000, guid: 94e63cdb7a3ccdc4eab8decd8c973671, type: 2}
+  - {fileID: 11400000, guid: 46fb0e462394a014e8c18b230ade2d6f, type: 2}
   m_isDefaultInstance: 1

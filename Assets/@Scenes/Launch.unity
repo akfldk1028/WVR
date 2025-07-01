@@ -581,6 +581,40 @@ MonoBehaviour:
   installationRoutineCheckpoint:
     _installationRoutineId: 4a33ce4b-b595-477f-a346-d7cf7af0ef27
     _installationVariants: []
+--- !u!1 &1931009780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5362129901281389696, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+  m_PrefabInstance: {fileID: 7741597811233885178}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1931009783 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2246566982081574372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+  m_PrefabInstance: {fileID: 7741597811233885178}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931009780}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5998b9c9ebb9cd41bc62ce7caf97756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1931009785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931009780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64c9e55f17e19c4db723cf236378d66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_qualityData: {fileID: 11400000, guid: 9300721797d3724418b5fb879d11c17e, type: 2}
+  m_gameFlow: {fileID: 1931009783}
+  m_reflectionProbe: {fileID: 0}
+  m_pointLight: {fileID: 589604515}
+  m_directionalLight: {fileID: 0}
+  m_loadingBarFill: {fileID: 7330061921423876015}
 --- !u!224 &373002181363921534
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1148,6 +1182,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2246566982081574372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2246566982081574372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
       propertyPath: FirstTask.ID
       value: GF_S0_Init
       objectReference: {fileID: 0}
@@ -1157,20 +1195,164 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2246566982081574372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
       propertyPath: m_sceneTasks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2246566982081574372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
       propertyPath: m_sceneTasks.Array.data[0].ID
+      value: GF_S1_Load_Beat_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: TaskID.ID
       value: GF_S0_Init
       objectReference: {fileID: 0}
     - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_completeWhen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: PlayerGazeCamera
+      value: 
+      objectReference: {fileID: 8888888888888888894}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1931009783}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1931009783}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Init
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PreloadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LaunchGame.GameFlowController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LaunchGame.GameFlowController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Beat1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450568955217753414, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: TaskID.ID
+      value: GF_S1_Load_Beat_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_completeWhen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: PlayerGazeCamera
+      value: 
+      objectReference: {fileID: 8888888888888888894}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1931009783}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 1736e09dac50ba14b9f3e1fe3695617d, type: 2}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CompleteSceneLoad
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: RefreshAll
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LaunchGame.GameFlowController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Meta.Utilities.Narrative.TaskManager, Meta.Utilities.Narrative
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Beat1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479510627872936372, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: m_onTaskStarted.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5362129901281389696, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
       propertyPath: m_Name
       value: Game Flow
       objectReference: {fileID: 0}
+    - target: {fileID: 5678165938491611426, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      propertyPath: PlayerGazeCamera
+      value: 
+      objectReference: {fileID: 8888888888888888894}
     - target: {fileID: 6010225481347898359, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1214,7 +1396,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5362129901281389696, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1931009785}
   m_SourcePrefab: {fileID: 100100000, guid: 7586e4c8e9be9d445ad55a1adf482baa, type: 3}
 --- !u!4 &7893487500526701742
 Transform:
@@ -1460,6 +1645,11 @@ MonoBehaviour:
   DynamicFoveatedRendering: 0
   FoveatedRenderingLevel: 0
   UpdatePosition: 1
+--- !u!20 &8888888888888888894 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8706687708023661331, guid: d5f109f7593933f4e9b69efa62d8fe02, type: 3}
+  m_PrefabInstance: {fileID: 8888888888888888888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

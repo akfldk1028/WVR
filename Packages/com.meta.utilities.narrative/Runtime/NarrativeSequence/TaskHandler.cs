@@ -59,16 +59,34 @@ namespace Meta.Utilities.Narrative
 
             if (!PlayerTransform)
             {
-                PlayerTransform = LocalPlayerTransform.Instance.transform;
+                // [DK 임시] LocalPlayerTransform이 없으면 스킵 - 나중에 수정 필요!
+                try
+                {
+                    PlayerTransform = LocalPlayerTransform.Instance?.transform;
+                }
+                catch (System.Exception)
+                {
+                    Debug.LogWarning("[DK 임시] LocalPlayerTransform.Instance를 찾을 수 없어서 스킵합니다. 나중에 수정 필요!");
+                    PlayerTransform = null;
+                }
 
                 if (PlayerTransform) { changed = true; }
             }
 
             if (!PlayerGazeCamera)
             {
-                PlayerGazeCamera = FindObjectsByType<Camera>(FindObjectsSortMode.None)
-                    .FirstOrDefault(c => c.CompareTag("MainCamera")
-                                         && c.GetComponent<AudioListener>());
+                // [DK 임시] 안전한 카메라 찾기
+                try
+                {
+                    PlayerGazeCamera = FindObjectsByType<Camera>(FindObjectsSortMode.None)
+                        .FirstOrDefault(c => c.CompareTag("MainCamera")
+                                             && c.GetComponent<AudioListener>());
+                }
+                catch (System.Exception)
+                {
+                    Debug.LogWarning("[DK 임시] MainCamera를 찾을 수 없어서 스킵합니다. 나중에 수정 필요!");
+                    PlayerGazeCamera = null;
+                }
 
                 if (PlayerGazeCamera) { changed = true; }
             }
